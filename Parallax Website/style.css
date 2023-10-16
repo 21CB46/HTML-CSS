@@ -5,7 +5,7 @@ body {
 }
 
 .image1 {
-    background-image: url(img_parallax.jpg);
+    background-image: url(./image/img_parallax.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -55,7 +55,7 @@ body {
     line-height: 28px;
 }
 .image2 {
-    background-image: url(img_parallax2.jpg);
+    background-image: url(./image/img_parallax2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -82,7 +82,7 @@ body {
     word-spacing: 3px;
 }
 .image3{
-    background-image: url(img_parallax3.jpg);
+    background-image: url(./image/img_parallax3.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
