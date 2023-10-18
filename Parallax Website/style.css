@@ -1,0 +1,92 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.image1 {
+    background-image: url(./image/img_parallax.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 625px;
+    opacity: 0.6;
+}
+
+
+
+.firstHeading,.secondHeading,.thirdHeading,.fourthHeading {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.scroll {
+    padding: 25px 50px;
+    color: white;
+    background-color: black;
+    font: 23px "Lato", sans-serif;
+    opacity: 0.9;
+    letter-spacing: 12px;
+}
+
+.parallel {
+    margin: 60px 23px;
+}
+
+.parallelHeading {
+    display: block;
+    text-align: center;
+    color: black;
+    letter-spacing: 1.0rem;
+    font: 20px bold;
+
+
+}
+
+.parallelParagraph {
+    color: #777;
+    font: 18px bold;
+    text-align: justify;
+    margin: 24px 70px;
+    word-spacing: 3px;
+    line-height: 28px;
+}
+.image2 {
+    background-image: url(./image/img_parallax2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 358px;
+    opacity: 0.6;
+}
+.less{
+    color: white;
+    font: 23px "Lato", sans-serif;
+    letter-spacing: 12px;
+}
+
+.secondParagraph{
+    display: block;
+    background-color: #282E34;
+    color: white;
+    padding: 50px 50px;
+}
+
+.internalParagraph{
+    font: 18px bold;
+    text-align: justify;
+    word-spacing: 3px;
+}
+.image3{
+    background-image: url(./image/img_parallax3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    opacity: 0.6;
+}
