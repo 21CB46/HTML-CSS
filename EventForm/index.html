@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOGEE event managment system</title>
+    <link rel="stylesheet" href="stylesheet2.css">
+</head>
+
+<body>
+    <style>
+        
+        body{
+            background-image: url("hello1.jpg");
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <section  class="container">
+        <header>Registration Form</header>
+        <form action="#" class="form" id="form" onsubmit="return confirm('Are you sure you want to submit the form?');" >
+            <div class="input-box" >
+                <label for="event">Event Name</label>
+                <input type="text" placeholder="Enter event name " id="event" name="event" required>
+                <button  type="button" onclick="addEvent()" class="add" >Add event </button>
+            </div>
+            
+          
+            <div class="input-box" >
+                <label for="Department">Department </label>
+                <input type="text" placeholder="Enter department name " id="Department" required  >
+            </div>
+            <div class="input-box" >
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Enter full name " id="name" required>
+            </div>
+            
+            <div class="column">
+                <div class="input-box">
+                    <Label for=" bitsid" >BITS ID</Label>
+                    <input type="text" name="bitsid" id="bitsid" placeholder="Enter BITS id" required >
+                </div>
+
+            <div class="input-box">
+                <Label for="email" >Email Address</Label>
+                <input type="text" placeholder="Enter your email address" id="email" required >
+            </div>
+            
+
+             <div class="column">
+                <div class="input-box">
+                    <Label for="phone" >Phone Number</Label>
+                    <input type="number" name="phone" id="phone" placeholder="Enter phone number" itemid="phone"          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required  >
+                </div>
+
+<div class="input-box">
+    <Label for="date">Event Date</Label>
+    <input type="date" name="" id="date" placeholder="Enetr event date"  required>
+</div>
+ </div>
+ <p>lorem100</p>
+ 
+ <div class="input-box">
+    <label for=" goal">Event goal</label>
+    <textarea name="goal" id="goal" cols="30" rows="5">Event goal</textarea>
+ </div>
+ 
+
+ <div class="input-address">
+    <label for="Address">Address</label>
+    <input type="text"  placeholder="Enter street address"  id="Address" required >
+    <input type="text"  placeholder="Enter street address line 2" required >
+    <div class="column">
+        
+        <input type="text" placeholder="Enter your city"  class="city" required >
+    </div>
+    <div class="column">
+        <input type="text" placeholder="Enter your region" class="region" required >
+        <input type="text" placeholder="Enter postal code" required >
+    </div>
+ </div>
+
+  <button type="button"  onclick="checkPhone()"   ondblclick="checkbitsid()" class="sub" > Submit</button>
+<!-- <progress id="progress" value="0" max="100"></progress> -->
+        </form>
+
+        <br><br><br>
+        <br><br><br>
+        <div id="event-list">
+  <h2>Event list</h2>
+  <ul id="events"></ul>
+</div>
+        
+    </section>
+
+    
+    <script>
+function handleFormSubmit(event) {
+    event.preventDefault
+    var event = document.getElementById("event").value;
+
+
+}
+
+        function checkPhone() {
+          var phone = document.getElementById("phone").value;
+          var regex = /^\d{10}$/;
+          if (regex.test(phone)) {
+            
+          } else {
+            alert("Invalid phone number");
+          }
+        }
+
+        function checkbitsid() {
+    var bitsid = document.getElementById("bitsid").value;
+    var regex = /^20\d{2}[A-Z]{1}[0-9]{1}[A-Z]{2}[0-9]{4}[P]$/;
+    if (regex.test(bitsid)) {
+      
+    } else {
+      alert("Invalid BITS ID");
+    }
+  }
+
+  function addEvent() {
+    var event = document.getElementById("event").value;
+    var eventList = document.getElementById("events");
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(event));
+    eventList.appendChild(li);
+  
+  }
+
+//   function updateProgress(percent) {
+//        var progress = document.getElementById('progress');
+//        progress.value = percent;
+//   }
+//   updateProgress(99);
+//         var form = document.getElementById("form");
+// form.addEventListener("submit", handleFormSubmit);
+
+
+      </script>
+
+</body>
+</html>
