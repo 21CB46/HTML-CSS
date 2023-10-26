@@ -1,0 +1,107 @@
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+   
+
+}
+.nav{
+    padding-right: 40px ;
+    padding-top: 7px;
+}
+
+
+
+.bar{
+   
+    font-family: 'JetBrains Mono' , monospace;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    background: white;
+    padding: 0;
+    margin: 0;
+
+    
+}
+.Logo  img{
+    
+    
+    background-repeat: no-repeat;
+    background-size:contain;
+    width:  300px;
+    height: 180px;
+    transform: translateY(-50%);
+    padding: 0px;
+    margin: 45px;
+     
+}
+
+
+
+
+
+
+
+ul{
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+
+}
+
+a:link{
+   text-decoration: none; 
+}
+#table-1{
+    background:rgb(29, 30, 45);
+    border: 5px solid white;
+    color: white;
+    padding-top: 75px;
+    padding-bottom:50px;
+    margin-top:130px ;
+    margin-left:auto ;
+    margin-right: auto;
+    width: 390px;
+    height:450px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.body-3{
+    background:rgb(29, 30, 45) ;
+    height: 100vw;
+}
+
+#name_of_subject,#frequency,#number_of_subject{
+    width: 300px;
+    height:35px;
+    border-radius:8px;
+    background:rgba(51,55,65,255) ;
+    color:white;
+    list-style:none ;
+
+}
+#create,#genrate,#shuffle,#show,#reset{
+    width: 300px;
+    height:35px;
+    border-radius:8px;
+    background-color: rgba(239,182,0,255);
+    padding:0px;
+    margin:5px;
+
+}
+#list{
+    text-align: center;
+    color: white;
+    padding: 0px;
+}
